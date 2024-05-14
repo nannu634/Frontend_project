@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simple Interface</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container_1">
+    <input type="checkbox" class="completed-checkbox">
+    <label for="completed">Completed</label>
+    <div class="frame_1">
+        <div class="frame_12">
+            <img src="./assets/delete.png" alt="delete" class="logo_3" >
+        </div>
+        <img src="./assets/cancel.png" alt="cancel" class="logo_2" >     
+    </div>
+</div>
+<div class="container_2">
+    <div class="frame_2">
+        <div class="frame_21">
+            <div class="frame_211">
+                <h1 class="logo_3">Flower Arrangement</h1>
+            </div>
+        </div>
+        <div class="frame_22">
+            <button class="modify-btn" onclick="toggleDetails()">Event Details</button>
+            <div id="details" style="display: none;">
+                <label for="date">Date:</label>
+                <input type="date" id="date">
+                <label for="time">Time:</label>
+                <input type="time" id="time">
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container_3">
+    <img src="./assets/user.png" alt="user">
+    <img src="./assets/Assign.png" alt="Assign_to">
+    <div class="frame_3">
+        <div class="dropdown-section">
+            <select>
+                <option value="option1">Nandani Jangid</option>
+                <option value="option2">Nandani Jangid1</option>
+                <option value="option3">Nandani Jangid2</option>
+                <option value="option4">Nandani Jangid3</option>
+            </select>
+        </div>
+    </div>
+</div>
+<div class="container_4">
+    <img src="./assets/box.png" alt="box">
+    <h1 class="text1">Note:</h1>
+    <div class="frame_4">
+
+    </div>
+</div>
+<div class="comment-section">
+    <input type="text" class="comment-input" placeholder="Add a comment">
+    <button class="send-btn" onclick="addComment()">Send</button>
+    <div id="comments"></div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
