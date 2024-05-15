@@ -1,0 +1,193 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.modal {
+    width: 319.45px;
+    height: 534.72px;
+    padding: 25px;
+    gap: 19px;
+    border: 1px solid #BCBCBC;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    margin: 50px auto;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+    width: 269.45px;
+    height: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header input {
+    font-size: 20px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+}
+
+.header button {
+    background: none;
+    border: none;
+    font-size: 1.2em;
+    cursor: pointer;
+}
+
+.icon_1 img {
+    height: 15px;
+    width: 16px;
+    line-height: 15px;
+}
+.icon_3 img {
+    height: 10px;
+    width: 7px;
+    line-height: 10px;
+}
+.icon_2 img {
+    height: 11.45px;
+    width: 12.73px;
+    line-height: 10px;
+}
+.icon_4 img {
+    height: 15px;
+    width: 13px;
+    line-height: 15px;
+}
+.icon_5 img {
+    height: 11.45px;
+    width: 12.73px;
+    line-height: 15px;
+}
+
+.container {
+    width: 269.45px;
+    height: 86.72px;
+    gap: 5px;
+    margin: auto;
+    align-self: center;
+}
+
+.section_1 input {
+    width: 269.45px;
+    height: 44px;
+    gap: 10px;
+    padding: px 20px 10px 20px;
+    border: 1px solid #BCBCBC;
+    border-radius: 50px;
+    font-size: 20px;
+    font-family: sans-serif;
+    line-height: 24.2px;
+}
+.section_2 input {
+    width: 269.45px;
+    height: 44px;
+    gap: 10px;
+    padding: px 20px 10px 20px;
+    border: 1px solid #BCBCBC;
+    border-radius: 50px;
+}
+
+.body {
+    margin-top: 20px;
+}
+
+.section_3 {
+    width: 269.45px;
+    height: 45px;
+    gap: 15px;
+}
+.assign-to {
+    width: 269.45px;
+    height: 45px;
+    gap: 15px;
+    display: flex;
+}
+
+#assign-to {
+    width: 162.25px;
+    height: 45px;
+    border: 1px solid #EDEDED;
+    border-radius: 25px;
+    gap: 25px;
+    padding: 10px 15px 10px 15px;
+}
+
+.assign-to-text {
+    width: 64px;
+    height: 17px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    letter-spacing: -2%;
+}
+
+.note-section {
+    width: 269.45px;
+    height: 44px;
+    gap: 15px;
+    display: flex;
+}
+
+.note-text {
+    width: 36px;
+    height: 17px;
+    font-family: sans-serif;
+    font-style: italic;
+    line-height: 16.94px;
+}
+
+.note-section input {
+    width: 190.73px;
+    height: 44px;
+    border: 1px solid #EDEDED;
+    border-radius: 12px;
+    gap: 10px;
+}
+
+.body input, .body select {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.comments-section {
+    margin-top: 20px;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.comment span {
+    flex: 1;
+}
+
+.comment input {
+    flex: 2;
+    border: none;
+    outline: none;
+}
+
+.comment button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 5px;
+}
+
+#new-comment {
+    width: calc(100% - 30px);
+}
+
+#add-comment {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
