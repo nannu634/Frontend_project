@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="modal">
+        <div class="header">
+            <button id="complete-btn" class="icon">✔</button>
+            <button id="delete-btn" class="icon">🗑️</button>
+            <button id="close-btn" class="icon">✖</button>
+        </div>
+        <div class="section">
+            <input type="text" id="event-title" value="Flower Arrangement" />
+        </div>
+        <div class="section">
+            <div class="event-date">
+                <input type="datetime-local" id="event-date" value="2024-12-05T08:00">
+            </div>
+        </div>
+        <div class="section">
+            <div class="assign-to">
+                <div class="assign-to-left">
+                    <span class="icon">👤</span>
+                    <span class="assign-to-text">Assign to:</span>
+                </div>
+                <select id="assign-to">
+                    <option value="jane_smith">Jane Smith</option>
+                    <option value="john_doe">John Doe</option>
+                </select>
+            </div>
+        </div>
+        <div class="section">
+            <div class="note-section">
+                <div class="note-left">
+                    <span class="icon">📝</span>
+                    <span class="note-text">Note:</span>
+                </div>
+                <input type="text" id="note" value="09382049832 www.flowervendor.com" />
+            </div>
+        </div>
+        <hr class="divider">
+        <div class="comments-header">Comments</div>
+        <div class="comments-section">
+            <div class="comment">
+                <span>Jane Smith</span>
+                <input type="text" value="Thanks for assigning me on the task. We’ll get the details ironed out." readonly />
+                <button class="edit-comment">✏️</button>
+                <button class="delete-comment">🗑️</button>
+            </div>
+            <input type="text" id="new-comment" placeholder="Write comment..." />
+            <button id="add-comment">➤</button>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
