@@ -9,22 +9,27 @@
 <body>
     <div class="modal">
         <div class="header">
-            <button id="complete-btn" class="icon">✔</button>
-            <button id="delete-btn" class="icon">🗑️</button>
-            <button id="close-btn" class="icon">✖</button>
-        </div>
-        <div class="section">
-            <input type="text" id="event-title" value="Flower Arrangement" />
-        </div>
-        <div class="section">
-            <div class="event-date">
-                <input type="datetime-local" id="event-date" value="2024-12-05T08:00">
+            <div class="left-icons">
+                <button id="complete-btn" class="icon_1"><img src="./assets/circle_tick.png"></button>
+            </div>
+            <div class="right-icons">
+                <button id="delete-btn" class="icon_2"><img src="./assets/delete.png"></button>
+                <button id="close-btn" class="icon_3"><img src="./assets/cancel.png"></button>
             </div>
         </div>
-        <div class="section">
+        <div class="container">
+            <div class="section_1">
+               <input type="text" id="event-title" value="Flower Arrangement" />
+            </div>
+            <div class="section_2">
+              <div class="event-date">
+                  <input type="datetime-local" id="event-date" value="2024-12-05T08:00">
+            </div>
+        </div>
+        </div>
             <div class="assign-to">
                 <div class="assign-to-left">
-                    <span class="icon">👤</span>
+                    <span class="icon_4"><img src="./assets/user.png"></span>
                     <span class="assign-to-text">Assign to:</span>
                 </div>
                 <select id="assign-to">
@@ -32,23 +37,19 @@
                     <option value="john_doe">John Doe</option>
                 </select>
             </div>
-        </div>
-        <div class="section">
             <div class="note-section">
                 <div class="note-left">
-                    <span class="icon">📝</span>
+                    <span class="icon_5"><img src="./assets/box.png"></span>
                     <span class="note-text">Note:</span>
                 </div>
                 <input type="text" id="note" value="09382049832 www.flowervendor.com" />
             </div>
-        </div>
         <hr class="divider">
         <div class="comments-header">Comments</div>
         <div class="comments-section">
             <div class="comment">
                 <span>Jane Smith</span>
                 <input type="text" value="Thanks for assigning me on the task. We’ll get the details ironed out." readonly />
-                <button class="edit-comment">✏️</button>
                 <button class="delete-comment">🗑️</button>
             </div>
             <input type="text" id="new-comment" placeholder="Write comment..." />
