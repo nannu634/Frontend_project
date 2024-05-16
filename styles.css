@@ -12,14 +12,17 @@ body {
     background-color: #FFFFFF;
     margin: 50px auto;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    position: relative; /* This is necessary for positioning the footer absolutely within this container */ /* Ensure the container takes at least the full viewport height */
+    padding-bottom: 50px;
 }
 
 .header {
     width: 269.45px;
-    height: 15px;
+    height: 18px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 18px;
 }
 
 .header input {
@@ -34,6 +37,11 @@ body {
     border: none;
     font-size: 1.2em;
     cursor: pointer;
+}
+
+.calendar-icon img {
+    width: 13px;
+    height: 15px;
 }
 
 .icon_1 img {
@@ -55,6 +63,7 @@ body {
     height: 15px;
     width: 13px;
     line-height: 15px;
+    margin-right: 10px;
 }
 .icon_5 img {
     height: 11.45px;
@@ -66,8 +75,9 @@ body {
     width: 269.45px;
     height: 86.72px;
     gap: 5px;
-    margin: auto;
-    align-self: center;
+    margin: 10px;
+    align-items: center;
+    margin-left: 20px;
 }
 
 .section_1 input {
@@ -78,17 +88,75 @@ body {
     border: 1px solid #BCBCBC;
     border-radius: 50px;
     font-size: 20px;
+    font-weight: 700;
+    color: red;
     font-family: sans-serif;
     line-height: 24.2px;
+    margin-bottom: 5px;
+    text-align: center;
 }
-.section_2 input {
+
+.event-date input {
     width: 269.45px;
     height: 44px;
     gap: 10px;
     padding: px 20px 10px 20px;
+    font-size: 12.88px;
     border: 1px solid #BCBCBC;
     border-radius: 50px;
+    align-items: center;
+    font-weight: 600;
+    text-align: center;
 }
+
+.comments-header {
+    width: 73px;
+    height: 17px;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 14px;
+    margin-left: 10px;
+    font-weight: 700;
+    color: #5A5A5A;
+}
+
+.comment {
+    width: 269.45px;
+    align-items: center;
+    gap: 10px;
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 20px;
+}
+
+.comment span {
+    font-family: sans-serif;
+    font-size: 12px;
+    line-height: 14.52px;
+}
+
+.comment input {
+    width: 100%;
+    font-family: sans-serif;
+    font-size: 11px;
+    line-height: 13.31px;
+    box-sizing: border-box; /* Ensure padding and border are included in the width and height */
+}
+
+.comment button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* Adjust as necessary */
+    padding: 0;
+    margin: 0;
+}
+
+.delete-comment img {
+    width: 11px;
+    height: 12px;
+}
+
 
 .body {
     margin-top: 20px;
@@ -104,6 +172,8 @@ body {
     height: 45px;
     gap: 15px;
     display: flex;
+    margin-top: 30px;
+    align-items: center;
 }
 
 #assign-to {
@@ -113,7 +183,11 @@ body {
     border-radius: 25px;
     gap: 25px;
     padding: 10px 15px 10px 15px;
+    margin-left: 15px;
+    color: #009379;
+    font-weight: 600;
 }
+
 
 .assign-to-text {
     width: 64px;
@@ -122,6 +196,13 @@ body {
     font-style: italic;
     font-size: 14px;
     letter-spacing: -2%;
+    display: flex;
+} 
+
+.assign-to-left {
+    margin-right: 15px;
+    margin-left: 20px;
+    display: flex;
 }
 
 .note-section {
@@ -129,6 +210,8 @@ body {
     height: 44px;
     gap: 15px;
     display: flex;
+    margin: 20px;
+    align-items: center;
 }
 
 .note-text {
@@ -145,6 +228,7 @@ body {
     border: 1px solid #EDEDED;
     border-radius: 12px;
     gap: 10px;
+    font-weight: 400;
 }
 
 .body input, .body select {
@@ -159,20 +243,19 @@ body {
     margin-top: 20px;
 }
 
-.comment {
-    display: flex;
-    align-items: center;
-    margin-bottom: 10px;
-}
+
 
 .comment span {
     flex: 1;
+    color: #009379;
+    font-weight: 600;
 }
 
 .comment input {
-    flex: 2;
+    flex: 3;
     border: none;
     outline: none;
+    font-weight: 400;
 }
 
 .comment button {
@@ -180,14 +263,43 @@ body {
     border: none;
     cursor: pointer;
     margin-left: 5px;
-}
+} 
 
 #new-comment {
-    width: calc(100% - 30px);
+    width: 234.45px;
+    height: 43px;
+    gap: 10px;
+    flex: 1;
+    font-family: sans-serif;
+    font-style: italic;
+    font-size: 11px;
+    border: 1px solid #E3E3E3;
+    border-radius: 25px;
 }
 
-#add-comment {
+.section_3 {
+    display: flex;
+    position: absolute;
+    left: 50%;
+    bottom: 5;
+    transform: translateX(-50%);
+    justify-content: center;
+    margin-top: 80px;
+}
+
+.section_3 button {
     background: none;
     border: none;
     cursor: pointer;
+    font-size: 16px; /* Adjust as necessary */
+    padding: 0;
+    margin: 0;
 }
+
+.add-comment img {
+    width: 12px;
+    height: 12px;
+}
+
+
+
