@@ -1,11 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const completeBtn = document.getElementById('complete-btn');
-    const addCommentBtn = document.getElementById('add-comment');
+    const addCommentBtn = document.querySelector('.add-comment');
     const newCommentInput = document.getElementById('new-comment');
-
-    completeBtn.addEventListener('click', () => {
-        alert('Event marked as complete!');
-    });
 
     addCommentBtn.addEventListener('click', () => {
         const commentText = newCommentInput.value.trim();
@@ -13,19 +8,6 @@ document.addEventListener('DOMContentLoaded', () => {
             addComment('You', commentText);
             newCommentInput.value = '';
         }
-    });
-
-    document.querySelectorAll('.edit-comment').forEach(button => {
-        button.addEventListener('click', () => {
-            const input = button.previousElementSibling;
-            if (input.readOnly) {
-                input.readOnly = false;
-                button.textContent = '✔️';
-            } else {
-                input.readOnly = true;
-                button.textContent = '✏️';
-            }
-        });
     });
 
     document.querySelectorAll('.delete-comment').forEach(button => {
@@ -42,9 +24,9 @@ document.addEventListener('DOMContentLoaded', () => {
             <span>${author}</span>
             <input type="text" value="${text}" readonly />
             <button class="edit-comment">✏️</button>
-            <button class="delete-comment">🗑️</button>
+            <button class="delete-comment"><img src="./assets/delete.png"></button>
         `;
-        commentsSection.insertBefore(commentDiv, newCommentInput);
+        commentsSection.insertBefore(commentDiv, document.querySelector('.section_3'));
 
         commentDiv.querySelector('.edit-comment').addEventListener('click', () => {
             const input = commentDiv.querySelector('input');
