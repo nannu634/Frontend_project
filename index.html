@@ -21,11 +21,10 @@
             <div class="section_1">
                <input type="text" id="event-title" value="Flower Arrangement" />
             </div>
-            <div class="section_2">
               <div class="event-date">
                   <input type="datetime-local" id="event-date" value="2024-12-05T08:00">
+        
             </div>
-        </div>
         </div>
             <div class="assign-to">
                 <div class="assign-to-left">
@@ -50,10 +49,12 @@
             <div class="comment">
                 <span>Jane Smith</span>
                 <input type="text" value="Thanks for assigning me on the task. We’ll get the details ironed out." readonly />
-                <button class="delete-comment">🗑️</button>
+                <button class="delete-comment"><img src="./assets/delete.png"></button>
             </div>
-            <input type="text" id="new-comment" placeholder="Write comment..." />
-            <button id="add-comment">➤</button>
+            <div class="section_3">
+                <input type="text" id="new-comment" placeholder="Write comment..." />
+                <button class="add-comment"><img src="./assets/send.png"></button>
+            </div>
         </div>
     </div>
     <script src="scripts.js"></script>
