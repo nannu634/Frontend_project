@@ -135,6 +135,11 @@ body {
     line-height: 14.52px;
 }
 
+.comment img {
+    width: 25px;
+    height: 25px;
+}
+
 .comment input {
     width: 100%;
     font-family: sans-serif;
@@ -156,7 +161,6 @@ body {
     width: 11px;
     height: 12px;
 }
-
 
 .body {
     margin-top: 20px;
@@ -183,7 +187,6 @@ body {
     border-radius: 25px;
     gap: 25px;
     padding: 10px 15px 10px 15px;
-    margin-left: 15px;
     color: #009379;
     font-weight: 600;
 }
@@ -200,8 +203,7 @@ body {
 } 
 
 .assign-to-left {
-    margin-right: 15px;
-    margin-left: 20px;
+    margin-left: 40px;
     display: flex;
 }
 
@@ -256,7 +258,10 @@ body {
     border: none;
     outline: none;
     font-weight: 400;
+    word-wrap: break-word;
+    white-space: pre-wrap;
 }
+
 
 .comment button {
     background: none;
@@ -284,7 +289,6 @@ body {
     bottom: 5;
     transform: translateX(-50%);
     justify-content: center;
-    margin-top: 80px;
 }
 
 .section_3 button {
